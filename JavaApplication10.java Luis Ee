@@ -1,0 +1,81 @@
+
+ */
+package Javaapplication10;
+import java.util.Scannner;
+enum TipoProducto{
+    alimento
+    bebida
+    higiene
+    limpieza
+   
+}
+class Producto{
+    private String codigo;
+    private String nombre;
+    private String nombreempleado;
+    private String cedulaempleado;
+    private int cantidad;
+    private double preciobase;
+    private  tipoproducto tipoproducto;
+    private double preciobruto;
+    private double gananciaesperada;
+    
+    public Producto(string codigo, string nombre, string nombreempleado, String cedulaempleado, int cantidad, double preciobase, tipoProducto tipoproducto){
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.nombreempleado = nombreempleado;
+        this.cedulaempleado = cedulaempleado;
+        this.cantidad = cantidad;
+        this.tipoproducto = tipoproducto;
+        calcularpreciobruto();
+        calculargananciaesperada();
+        
+        private void calcularpreciobruto(){
+            switch (tipoProducto){
+                case Alimentos:
+                    preciobruto = preciobase * 0.20 + preciobase;
+                    break;
+                case bebidas:
+                    preciobruto = preciobase * 0.30 + preciobase;
+                    break;
+                case higiene:
+                    preciobruto = preciobase * 0.25 + preciobase;
+                    break;
+                case limpieza:
+                    preciobruto = preciobase * 0.19 + preciobase;
+                    break;
+        private void calculargananciaesperada(){
+        
+            gananciaesperadam = (preciobruto - preciobase) * cantidad;
+        
+        public double getpreciobruto(){
+        return preciobruto; 
+            
+                                        
+                           
+                            
+                
+     
+              
+           }
+        }     
+              
+             
+    }
+        
+    }
+
+/**
+ *
+ * @author luisf
+ */
+public class JavaApplication10 {
+
+    /**
+     * @  param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    }
+    
+}
